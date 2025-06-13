@@ -1,0 +1,25 @@
+General idea:
+How to get started with a git repository, make commits and pushing.
+This is just a reminder for students when they start their cursus.
+
+Content of the exercise:
+ - Create a file named 'README.md'
+ - Input your login inside of the file.
+ - Commit this change, making sure to follow the conventional commit norm
+   - This is arbitrary on my end, but I believe it is a good idea to make students learn the basics while respecting this norm.
+ - Create a file named 'git.txt'
+ - Inside, put the complete hash of the last commit.
+ - Again, commit this change, following the conventional commit norm
+ - Make sure to push those commits
+
+For the evaluation:
+ - Check the files README.md and git.txt exist
+ - Check the content of the file README.md is in fact the login of the correctee
+ - Check the content of the git.txt, it should be the hash of the commit from the README.md modification
+ - Check that all the commits are made by the student
+ - Check that all the commits respect the conventional commit norm.
+ - Useful commands for the evaluation:
+   - git log
+   - git status
+   - cat
+   - ls

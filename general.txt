@@ -1,0 +1,5 @@
+To Git Or Not To Git
+Familiarize yourself with the wonderful world of the best version control system.
+
+The objective of this project is to offer you some insights on how git works, and it may be used to make working (by yourself or in groups) easier.
+

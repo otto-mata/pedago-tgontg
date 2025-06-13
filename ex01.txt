@@ -1,0 +1,17 @@
+General idea:
+Learn the creation of branches, make changes and merge those changes
+
+Content of the exercise:
+ - Create a branch named 'doc/truth' diverging from main.
+ - In this branch, create a file named 'truth.txt', containing the absolute truth '42 is the best school in the world.'
+ - Merge this branch into main, creating a commit.
+ - Create a new branch named 'fix/truth-doc' diverging from main.
+ - In this branch, edit the file 'truth.txt' such as it contains the correct truth '42Paris is the best school in the world.'
+ - Merge 'fix/truth-doc' into main using fast-forward merge.
+ - Remove the branches that were merged into main. They are not useful anymore.
+
+For the evalutation:
+ - Use git branch to check that there only is the 'main' branch.
+ - use git log --graph --online to check the merges
+ - check that there is a commit for the branch 'doc/truth' but not for 'fix/truth-doc'
+ - ask questions about fast forwarding

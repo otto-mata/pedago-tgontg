@@ -1,0 +1,34 @@
+General idea:
+Learn to handle and resolve merge conflicts
+
+Content of the exercise:
+ - In main, create a file main.c containing your 42 Header and containing the following code (snip.).
+
+#include <stdio.h>
+
+int main(void)
+{
+	char *best_of_the_best = "ottomata";
+	printf("%s is the best.\n", best_of_the_best);
+	return (0);
+}
+ - In a new branch from main 'feat/main', edit main.c as such:
+
+int main(void)
+{
+        char *one_of_the_best = "<login>";
+        printf("%s is the best.\n", one_of_the_best);
+        return (0);
+}
+ - In main, edit main.c as such:
+
+int main(void)
+{
+        char *best_of_the_best = "ottomata";
+        printf("%s is one of the best.\n", best_of_the_best);
+        return (0);
+}
+ - Merge feat/main into main with a commit. While doing so, copy the content of main.c during the merge conflicts resolution process into a file 'conflicts.txt'
+ - Merge fix/best into main with a commit. When resolving the conflict, make sure to combine both changes so it reads one_of_the_best = "<login>" AND printf("%s is one of the best.\n", one_of_the_best);
+ - Do not delete any branch.
+
