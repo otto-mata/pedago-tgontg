@@ -1,0 +1,17 @@
+General Idea:
+Cleanup commit history with rebase.
+
+Content of the exercise:
+ - Re-do the steps from exercise 00.
+ - Copy the content of the animals.tar file into your directory.
+ - On a new branch named feat/new-cats, modify the file cats.csv so that:
+   - It contains 3 new cats
+   - Each cat is added with a new commit, respecting the CC norm
+ - On main, modify the file dogs.csv so that it contains a new dog
+   - This dog is named Herbert
+   - Herbert weights 140lbs
+   - Herbert is 1 year old
+   - Herbert is grey
+ - Back on feat/new-cats, rebase onto main interactively, squashing the 3 cat-adding commits.
+ - Resolve conflicts, if any. (There should not be any)
+
