@@ -2,6 +2,7 @@ General idea:
 Learn the creation of branches, make changes and merge those changes
 
 Content of the exercise:
+ - Re-do the steps from exercise 00.
  - Create a branch named 'doc/truth' diverging from main.
  - In this branch, create a file named 'truth.txt', containing the absolute truth '42 is the best school in the world.'
  - Merge this branch into main, creating a commit.

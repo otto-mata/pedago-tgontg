@@ -2,6 +2,7 @@ General idea:
 Learn to handle and resolve merge conflicts
 
 Content of the exercise:
+ - Re-do the steps from exercise 00.
  - In main, create a file main.c containing your 42 Header and containing the following code (snip.).
 
 #include <stdio.h>
@@ -31,4 +32,4 @@ int main(void)
  - Merge feat/main into main with a commit. While doing so, copy the content of main.c during the merge conflicts resolution process into a file 'conflicts.txt'
  - Merge fix/best into main with a commit. When resolving the conflict, make sure to combine both changes so it reads one_of_the_best = "<login>" AND printf("%s is one of the best.\n", one_of_the_best);
  - Do not delete any branch.
-
+ - You must do everything by hand, using automated conflicts resolvers will be considered cheating.
