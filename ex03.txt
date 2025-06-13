@@ -5,7 +5,7 @@ Content of the exercise:
  - Re-do the steps from exercise 00.
  - Copy the content of the animals.tar file into your directory.
  - On a new branch named feat/new-cats, modify the file cats.csv so that:
-   - It contains 3 new cats
+   - It contains 3 new cats, making sure to properly the CSV format.
    - Each cat is added with a new commit, respecting the CC norm
  - On main, modify the file dogs.csv so that it contains a new dog
    - This dog is named Herbert
@@ -13,5 +13,51 @@ Content of the exercise:
    - Herbert is 1 year old
    - Herbert is grey
  - Back on feat/new-cats, rebase onto main interactively, squashing the 3 cat-adding commits.
- - Resolve conflicts, if any. (There should not be any)
+ - Merge feat/new-cats into main with a commit.
 
+For the evaluation:
+- git log on feat/new-cats should look something like this:
+commit 3150182a21a72c3342c9f37d02925bca9a635b0e (HEAD -> feat/new-cats)
+Author: otto-mata <ottomata@proton.me>
+Date:   Sat Jun 14 01:19:41 2025 +0200
+
+    feat(cats): Added moulinette
+    
+    feat(cats): Added norminet
+    
+    feat(cats): Added isambert
+
+commit 6066bcc9ac1ed4de00998479339051892b062c4b
+Author: otto-mata <ottomata@proton.me>
+Date:   Sat Jun 14 01:19:41 2025 +0200
+
+    feat(dogs): added herbert
+
+commit 1cb2b016c6670793b532f601e700046f644ac8e6
+Author: otto-mata <ottomata@proton.me>
+Date:   Sat Jun 14 01:19:41 2025 +0200
+
+    feat(main): source data files
+
+commit 70ce3473879c8589559529b233e2b64e6b4b1a56
+Author: otto-mata <ottomata@proton.me>
+Date:   Sat Jun 14 01:19:41 2025 +0200
+
+    chore(git.txt): added signature from last commit
+
+commit 3a4b18850ceb8dc4409f48d5f5bec2ffdbb34270
+Author: otto-mata <ottomata@proton.me>
+Date:   Sat Jun 14 01:19:41 2025 +0200
+
+    chore(README): login in file
+
+ - git log --graph --oneline on main should look something like that:
+
+*   04fedbb (HEAD -> main) Merge branch 'feat/new-cats'
+|\  
+| * 3150182 (feat/new-cats) feat(cats): Added moulinette
+|/  
+* 6066bcc feat(dogs): added herbert
+* 1cb2b01 feat(main): source data files
+* 70ce347 chore(git.txt): added signature from last commit
+* 3a4b188 chore(README): login in file

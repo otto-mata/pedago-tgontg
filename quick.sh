@@ -97,3 +97,34 @@ git add main.c
 git merge --continue
 mv ../conflicts.txt ./
 cd ..
+# ex03
+mkdir ex03
+cd ex03
+git init
+echo tblochet > README.md
+git add README.md 
+git commit -m 'chore(README): login in file'
+echo $(git rev-parse HEAD) > git.txt
+git add git.txt 
+git commit -m 'chore(git.txt): added signature from last commit'
+cp /home/tblochet/projects/pedago/to-git-or-not-to-git/ex03/* .
+git add .
+git commit -m 'feat(main): source data files'
+git checkout -b feat/new-cats
+echo "moulinette,6,grey,8" >> cats.csv
+git add cats.csv
+git commit -m 'feat(cats): Added moulinette'
+echo "norminet,13,grey,15" >> cats.csv
+git add cats.csv
+git commit -m 'feat(cats): Added norminet'
+echo "isambert,12,black,22" >> cats.csv
+git add cats.csv
+git commit -m 'feat(cats): Added isambert'
+git checkout main
+echo "Herbert,1,grey,140" >> dogs.csv
+git add dogs.csv
+git commit -m 'feat(dogs): added herbert'
+git checkout feat/new-cats
+git rebase -i main
+git checkout main
+git merge --no-ff feat/new-cats
